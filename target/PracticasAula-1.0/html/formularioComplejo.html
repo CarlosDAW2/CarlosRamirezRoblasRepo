@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Datos personales</title>
+        <link rel="stylesheet" type="text/css" href="../Css/formulariocss.css" media="all" />
+    </head>
+
+    <body id="bodyForm">
+        <form id="formulario" action="../FormularioComplejo" method="post">
+            <fieldset>
+                <legend>Formulario de Ejemplo</legend>
+                <label>Usuario</label>
+                <input id="campo1" name="Nombre" type="text" />
+                <br/>
+                <label>Password</label>
+                <input id="campo2" name="Password" type="password" />
+                <br/>
+                <br/>
+                <label>Edad:</label>
+                <select name="Edad">
+                    <option value="22" selected="selected">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                </select>
+                <br/>     
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
+                <label>Estado civil</label>
+                
+                    <input type="radio" name="EstadoCivil" value="Casado">Casado
+                    <input type="radio" name="EstadoCivil" value="Soltero" checked>Soltero
+                    <input type="radio" name="EstadoCivil" value="Divorciado">Divorciado
+                    <input type="radio" name="EstadoCivil" value="Viduo" >Casado
+
+                    <br/>
+                    <label>Aficiones(Pulse control para seleccionar mas de una)</label></br>
+                    <SELECT NAME="Aficiones" size="6" MULTIPLE="multiple"> 
+                        <OPTION VALUE="Deporte">Deporte</OPTION> 
+                        <OPTION VALUE="Musica">Musica</OPTION> 
+                        <OPTION VALUE="Informatica">Informatica</OPTION> 
+                        <OPTION VALUE="Viajes" selected="selected">Viajes</OPTION> 
+                        <OPTION VALUE="Tiendas">Tiendas</OPTION> 
+                        <OPTION VALUE="Juegos">Juegos</OPTION> 
+                    </SELECT>
+                    <br/>
+                    <br/>
+                    <label>Comentarios</label>
+                    <br/>
+                    <textarea name="Comentarios" rows="4" cols="50">
+Escribe aqui para comentar
+                    </textarea>
+                    <br/>
+
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Medios tecnologicos</legend>
+                <label>Tienes internet?</label>
+                
+                    <input type="radio" name="Internet" value="Si" checked>Si
+                    <input type="radio" name="Internet" value="No" >No<br>
+
+                    <br/>
+
+                    <label>Seleccione su sistema operativo</label><br/>
+                    <SELECT NAME="SistemaOperativo" size="4" > 
+                        <OPTION VALUE="Linux">Linux</OPTION> 
+                        <OPTION VALUE="Windows" selected="selected">Windows</OPTION> 
+                        <OPTION VALUE="Macintosh">Macintosh</OPTION> 
+                        <OPTION VALUE="Solari">Solari</OPTION>  
+                    </SELECT>
+
+                    <br/>     
+                    <input type="hidden" name="campoOculto" value="23" />
+            </fieldset>
+            <input id="campo3" name="enviar" type="submit" value="Enviar" />
+            <input  type="reset" value="Borrar informacion">
+        </form>
+    </body>
+</html>
